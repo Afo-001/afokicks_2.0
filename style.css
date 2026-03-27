@@ -93,3 +93,33 @@ body {
     border-bottom: 1px solid #333;
 }
 
+/* MOBILE STYLES */
+@media (max-width: 600px) {
+    /* 1. Make the shoes 2 per row (looks better than 1) */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    /* 2. Hide the sidebars (they take up too much space on mobile) */
+    .sidebar, .right-panel {
+        display: none;
+    }
+
+    /* 3. Make the banner shorter so shoes are visible immediately */
+    .main-banner {
+        height: 180px;
+    }
+
+    /* 4. Fix the Header for small screens */
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 100%;
+        margin: 0;
+    }
+}
