@@ -93,17 +93,3 @@ body {
     border-bottom: 1px solid #333;
 }
 
-@media (max-width: 600px) {
-    .product-grid {
-        grid-template-columns: 1fr; /* Changes 3 shoes to 1 shoe per row */
-        gap: 15px;
-    }
-    
-    .dashboard {
-        grid-template-columns: 1fr; /* Stacks sidebars on top of each other */
-    }
-
-    .sidebar, .right-panel {
-        display: none; /* Hides sidebars on mobile to keep it clean */
-    }
-}
